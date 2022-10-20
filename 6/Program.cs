@@ -1,6 +1,10 @@
-﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. 
-// Не использовать строки для расчета.
-Console.WriteLine("Введите число");
-int number = int.Parse(Console.ReadLine()); // преобразует строковое представление в соответствующее числовое целочисленное значение.
-string str = number.ToString();
-Console.WriteLine(str[2]);
+﻿Console.WriteLine("Введите число в диапазоне от 1 до 7 >>>");
+int number = int.Parse(Console.ReadLine());
+
+if(number==6 || number==7)
+{
+    Console.WriteLine("Номер дня недели является выходным");
+}
+
+else
+     Console.WriteLine("Номер дня недели не является выходным");
