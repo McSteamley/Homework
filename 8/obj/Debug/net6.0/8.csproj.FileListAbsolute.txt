@@ -1,0 +1,15 @@
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.csproj.AssemblyReference.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.AssemblyInfoInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.AssemblyInfo.cs
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.csproj.CoreCompileInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\bin\Debug\net6.0\8.exe
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\bin\Debug\net6.0\8.deps.json
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\bin\Debug\net6.0\8.runtimeconfig.json
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\bin\Debug\net6.0\8.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\bin\Debug\net6.0\8.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\refint\8.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\8.genruntimeconfig.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\8\obj\Debug\net6.0\ref\8.dll
