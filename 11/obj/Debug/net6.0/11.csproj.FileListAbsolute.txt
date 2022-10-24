@@ -1,0 +1,15 @@
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.csproj.AssemblyReference.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.AssemblyInfoInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.AssemblyInfo.cs
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.csproj.CoreCompileInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\bin\Debug\net6.0\11.exe
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\bin\Debug\net6.0\11.deps.json
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\bin\Debug\net6.0\11.runtimeconfig.json
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\bin\Debug\net6.0\11.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\bin\Debug\net6.0\11.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\refint\11.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\11.genruntimeconfig.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\Homeworck C#\11\obj\Debug\net6.0\ref\11.dll
