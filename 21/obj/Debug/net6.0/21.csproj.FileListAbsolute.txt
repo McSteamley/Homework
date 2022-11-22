@@ -1,0 +1,15 @@
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\bin\Debug\net6.0\21.exe
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\bin\Debug\net6.0\21.deps.json
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\bin\Debug\net6.0\21.runtimeconfig.json
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\bin\Debug\net6.0\21.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\bin\Debug\net6.0\21.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.csproj.AssemblyReference.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.AssemblyInfoInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.AssemblyInfo.cs
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.csproj.CoreCompileInputs.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\refint\21.dll
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.pdb
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\21.genruntimeconfig.cache
+C:\Users\Steamley\OneDrive\Рабочий стол\домашнее задание\Homework\21\obj\Debug\net6.0\ref\21.dll
