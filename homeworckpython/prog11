@@ -1,0 +1,144 @@
+import telebot
+
+from telebot import types
+
+
+token = ''
+adminuserid = ""
+joinUser = []
+
+with open('Rassilka.txt', encoding='utf-8') as f:
+    joinUser.extend(row.rstrip() for row in f)
+
+bot = telebot.TeleBot(token)
+
+
+
+Main = types.InlineKeyboardMarkup()
+button1 = types.InlineKeyboardButton(text="Мой инстаграмм", url='https://instagram.com/lash_maker_nvrsk_anastasia?igshid=YmMyMTA2M2Y=')
+button2 = types.InlineKeyboardButton(text="Запись ко мне", url="https://mst.link/tvoymaster_anastasiya")
+button3 = types.InlineKeyboardButton(text='Мой прайс лист', callback_data='price')
+button4 = types.InlineKeyboardButton(text='Образец работ', callback_data='work')
+button5 = types.InlineKeyboardButton(text='Связь со мной', callback_data='contact')
+button6 = types.InlineKeyboardButton(text='Как к нам попасть', callback_data='geo')
+button7 = types.InlineKeyboardButton(text="Мои Рекамендации Мастеров",callback_data='masters' )
+button8 = types.InlineKeyboardButton(text="???Что такое RF Лифтинг???",callback_data='RF' )
+Main.add(button1)
+Main.add(button2)
+Main.add(button3)
+Main.add(button4)
+Main.add(button5)
+Main.add(button6)
+Main.add(button7)
+Main.add(button8)
+
+
+kb = telebot.types.ReplyKeyboardMarkup(True)
+kb.row('❌ Отмена')
+
+
+@bot.message_handler(commands=['start', 'help'])
+def start(message):
+    if str(message.chat.id) not in joinUser:
+        with open('Rassilka.txt', "a", encoding='utf-8') as f:
+            f.write(str(message.chat.id) + "\n")
+            joinUser.append(str(message.chat.id))
+    mess = f'Здравстуйте,{message.from_user.first_name} {message.from_user.last_name}, Я персональный бот помощник Анастасии\n\n👇👇 Выберите нужный раздел 👇👇, (по поводу освоения профессии lashmaker пишите в раздел (Связь со мной)) '
+    bot.send_message(message.chat.id, mess, parse_mode='html', reply_markup=Main)
+
+
+
+@bot.message_handler(commands=['puki'])
+def mess(message):
+    try:
+        for user in joinUser:
+            bot.send_message(user, str(message.text).split('msg ')[1])
+    except:
+        pass
+
+
+@bot.callback_query_handler(func=lambda call: True)
+
+
+def call_action(call):
+    userid = str(call.message.chat.id)
+    username = str(call.from_user.username)
+    if call.data == 'price':
+        img = open('photo_2022-10-25_23-28-05.jpg', 'rb')
+        bot.send_photo(userid, img)
+        img.close
+
+
+    elif call.data == 'RF':
+        img1 = open('photo_2022-12-08_20-59-35.jpg', 'rb')
+        bot.send_photo(userid, img1)
+        img.close
+
+
+    elif call.data == 'masters':
+        bot.send_message(userid,
+                         f'Мастер перманентного макияжа Юлия - https://t.me/Ustino4444ka'
+                         f'',
+                         reply_markup=Main)
+
+
+    elif call.data == 'work':
+        work1 = open('photo_2022-10-25_23-32-03.jpg', 'rb')
+        work2 = open('photo_2022-10-25_23-35-54.jpg', 'rb')
+        work3 = open('photo_2022-10-25_23-37-53.jpg', 'rb')
+        work4 = open('photo_2022-10-25_23-43-39.jpg', 'rb')
+        work5 = open('photo_2022-10-25_23-46-30.jpg', 'rb')
+        work6 = open('photo_2022-10-25_23-47-47.jpg', 'rb')
+
+        bot.send_media_group(userid, [telebot.types.InputMediaPhoto(work1), telebot.types.InputMediaPhoto(work2),
+                                      telebot.types.InputMediaPhoto(work3), telebot.types.InputMediaPhoto(work4),
+                                      telebot.types.InputMediaPhoto(work5), telebot.types.InputMediaPhoto(work6)])
+
+        work1.close
+        work2.close
+        work3.close
+        work4.close
+        work5.close
+        work6.close
+
+
+
+
+
+
+
+    elif call.data == 'contact':
+        def contact_me(message):
+            try:
+                if message.text.lower() == '❌ отмена':
+                    bot.send_message(message.chat.id,
+                                     f'Здравстуйте,<b>{call.from_user.first_name} {call.from_user.last_name}</b>, Я персональный бот помощник Анастасии\n\n👇👇 Выберите нужный раздел 👇👇',
+                                     reply_markup=Main)
+                elif (len(message.text) < 3000):
+                    bot.send_message(message.chat.id, "Ваше сообщение отправлено!")
+                    bot.send_message(message.chat.id,
+                                     f'Здравстуйте,<b>{call.from_user.first_name} {call.from_user.last_name}</b>, Я персональный бот помощник Анастасии\n\n👇👇 Выберите нужный раздел 👇👇',
+                                     reply_markup=Main)
+                    mess = str(message.text)
+                    bot.send_message(adminuserid, "💬 <b>Отправитель: </b>" + str(call.from_user.first_name) + " " + str(
+                        call.from_user.last_name) + " @" + str(username) + " (" + str(
+                        userid) + ")\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n<i>" + str(mess) + "</i>\n➖➖➖➖➖➖➖➖➖➖➖➖➖", parse_mode='HTML')
+                else:
+                    sent = bot.send_message(userid, '<b>Ваше сообщение слишком длинное, напишите снова:</b>',
+                                            parse_mode='HTML', reply_markup=kb)
+                    bot.register_next_step_handler(sent, contact_me)
+            except:
+                sent = bot.send_message(userid, '<b>Напишите ваш вопрос,я отвечу Вам, как только освобожусь:</b>', parse_mode='HTML', reply_markup=kb)
+                bot.register_next_step_handler(sent, contact_me)
+
+        sent = bot.send_message(userid, '<b>Напишите ваш вопрос,я отвечу Вам , как только освобожусь:</b>', parse_mode='HTML', reply_markup=kb)
+        bot.register_next_step_handler(sent, contact_me)
+
+    elif call.data == 'geo':
+        bot.send_location(userid, '44.709231', '37.785211')
+
+
+
+
+
+bot.polling(none_stop=True, interval=0)
